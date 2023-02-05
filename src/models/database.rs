@@ -9,7 +9,7 @@ impl Database {
                 .expect("Cannot get dbroot from env variable: BPS_DBROOT")
                 .to_str()
                 .expect("BPS_DBROOT cannot be parsed as a str")
-                .to_string()
+                .to_string(),
         }
     }
 }
