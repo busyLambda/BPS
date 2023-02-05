@@ -1,5 +1,5 @@
 pub mod models;
 
 fn main() {
-    println!("Hello, world!");
+    println!("csa, vilag!!");
 }
