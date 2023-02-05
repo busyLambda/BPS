@@ -1,4 +1,4 @@
-use super::{version::Version, dependency::Dependency};
+use super::{dependency::Dependency, version::Version};
 
 pub struct Package {
     pub name: String,

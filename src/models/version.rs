@@ -22,7 +22,7 @@ impl Version {
         } else {
             Rgx::ExactMatch
         };
-        if version_vec.len()!= 3 {
+        if version_vec.len() != 3 {
             return None;
         } else {
             Some(Self {
