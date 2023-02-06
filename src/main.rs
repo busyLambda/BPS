@@ -8,7 +8,7 @@ const LOGO: &str = ".
                    |_()_/ |_|    (____)";
 
 fn main() {
-    println!("Hello, world!");
+    println!("csa, vilag!!");
     let matches = Command::new("Binary Packaging System")
         .version("0.1")
         .author("Susa Milán")
