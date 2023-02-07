@@ -1,5 +1,8 @@
+use serde::{Deserialize, Serialize};
+
 use super::{dependency::Dependency, version::Version};
 
+#[derive(Deserialize, Serialize)]
 pub struct Package {
     pub name: String,
     pub version: Version,

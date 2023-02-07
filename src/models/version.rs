@@ -1,3 +1,6 @@
+use serde::{Deserialize, Serialize};
+
+#[derive(Deserialize, Serialize)]
 pub struct Version {
     pub major: u32,
     pub minor: u32,
@@ -44,12 +47,15 @@ impl Version {
     }
 }
 
+#[derive(Deserialize, Serialize)]
 pub enum Rgx {
     Above,
     Below,
     ExactMatch,
     RangeTo(String),
 }
+
+// TODO: make parsing good.
 impl Rgx {
     pub fn from_str(s: &str) -> Self {
         match s {
