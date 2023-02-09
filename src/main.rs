@@ -1,4 +1,5 @@
 use clap::{Arg, Command};
+use models::mirror_handle::MirrorHandle;
 
 pub mod models;
 
@@ -8,7 +9,10 @@ const LOGO: &str = ".
                    |_()_/ |_|    (____)";
 
 fn main() {
-    println!("Hello, world!");
+    let mirror_handle = MirrorHandle::new();
+
+    //let mirrors = mirror_handle.get_mirrors();
+
     let matches = Command::new("Binary Packaging System")
         .version("0.1")
         .author("Susa Milán")
